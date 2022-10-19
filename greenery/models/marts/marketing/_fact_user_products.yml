@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: _fact_user_products
+    description: "Table with a unique row for each order, containing attributes about that order enriched with summary measures/data."
+    columns: 
+      - name: order_guid
+        tests:
+          - not_null
+          - unique

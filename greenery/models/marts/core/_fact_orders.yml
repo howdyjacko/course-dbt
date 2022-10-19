@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: _fact_orders
+    description: "orders by row"
+    columns: 
+      - name: order_guid
+        tests:
+          - not_null
+          - unique
