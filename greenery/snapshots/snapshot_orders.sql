@@ -10,7 +10,7 @@
     updated_at = 'created_at'
    )
 }}
-
+ 
   SELECT * FROM {{ source('postgres','orders') }}
 
 {% endsnapshot %}

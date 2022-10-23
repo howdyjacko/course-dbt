@@ -4,7 +4,7 @@ models:
   - name: _fact_orders
     description: "orders by row"
     columns: 
-      - name: order_guid
+      - name: ORDER_ID
         tests:
           - not_null
           - unique

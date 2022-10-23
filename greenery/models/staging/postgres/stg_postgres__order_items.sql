@@ -4,6 +4,6 @@
   )
 }}
 
-SELECT 
+SELECT
     *
 FROM {{ source('postgres', 'order_items') }}

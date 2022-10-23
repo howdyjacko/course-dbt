@@ -14,12 +14,7 @@ products AS (
     SELECT * FROM {{ ref('stg_postgres__products') }}
 )
 
-SELECT  orders.ORDER_GUID
-        ,order_items.PRODUCT_GUID
-        ,order_items.QUANTITY_ORDERED
-        ,products.PRODUCT_NAME
-        ,products.PRODUCT_PRICE
-        ,order_items.QUANTITY_ORDERED
+SELECT  orders.ORDER_ID
 FROM orders
-LEFT JOIN order_items ON orders.ORDER_GUID = order_items.ORDER_GUID
-LEFT JOIN products ON order_items.PRODUCT_GUID = products.PRODUCT_GUID
+LEFT JOIN order_items ON orders.ORDER_ID = order_items.ORDER_ID
+LEFT JOIN products ON order_items.PRODUCT_ID = products.PRODUCT_ID

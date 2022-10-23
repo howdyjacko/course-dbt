@@ -1,0 +1,22 @@
+Part 1:
+
+    22%
+    Answer: 71 users with >2 purchases
+
+    SELECT user_id, COUNT(*) as orders_count FROM STG_POSTGRES__USERS JOIN STG_POSTGRES__ORDERS USING (user_id) GROUP BY user_id HAVING orders_count >2;
+
+
+
+Part 2:
+    We added some more models and transformed some data! Now we need to make sure they’re accurately reflecting the data. Add dbt tests into your dbt project on your existing models from Week 1, and new models from the section above
+
+    YES
+    
+
+Part 3: dbt Snapshots
+
+    Question #: Which orders changed from week 1 to week 2?
+
+    All orders within the snapshot contained orders that had changed. I manually assessed this 
+    based on the created_at and updated_at time stamp.  There were no null values. 
+
