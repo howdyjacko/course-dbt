@@ -25,6 +25,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   greenery:
+    marts:
     # Config indicated by + and applies to all files under models/example/
-    example:
       +materialized: view
+      +post-hook:
+      - "grant select on {{ this }} to role TRANSFORMER_DEV" 
+
+
+

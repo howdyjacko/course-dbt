@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: aggregrates_count_macros
+    description: "use this macros when you'd like to aggregate counts for any table that contains a field that can be counted (e.g. Sessions, orders"
+    arguements:
+      - name: table 
+        type: string
+        description: This is the model we will pll data from
+      - name: columns
+        type: string
+        description: we are counting aggregated values of each column within a table/model

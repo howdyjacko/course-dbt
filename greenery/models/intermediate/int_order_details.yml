@@ -1,8 +1,7 @@
 version: 2
 
 models:
-  - name: _fact_user_products
+  - name: int_order_details
     description: "Table with a unique row for each order, containing attributes about that order enriched with summary measures/data."
     columns: 
-      - name: ORDER_ID
-        description: "the order ID number"
+      - name: conversion rate

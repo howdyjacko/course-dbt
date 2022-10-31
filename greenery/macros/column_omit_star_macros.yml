@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: column_omit_star_macros
+    description: "use this macro to omit column(s) from the applied model"
+    arguements:
+      - name: table
+        type: string
+        description: table with ommission
+      - name: columns
+        type: string
+        description: this is the column we will omit

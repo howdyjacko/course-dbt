@@ -16,6 +16,7 @@ users AS(
 
 SELECT  orders.USER_ID
         ,users.FIRST_NAME
+        ,users.PHONE_NUMBER
         ,users.EMAIL
         ,users.LAST_NAME
         ,orders.ORDER_ID

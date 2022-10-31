@@ -12,4 +12,5 @@ orders_products AS(
 )
 
 SELECT  orders.ORDER_ID
+
 FROM orders

@@ -1,0 +1,1 @@
+{{ column_omit_star_macros('stg_postgres__users', 'PHONE_NUMBER') }}
